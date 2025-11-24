@@ -3,7 +3,9 @@
 
 
 
-<p>このリポジトリは、findコマンドを実行してカレントディレクトリ以下の全てのファイル内の文字列を検索して、パスを出力します</p>
+<div class="wp-block-group">
+<p>このリポジトリは、findコマンドを実行してカレントディレクトリ以下の全てのファイル内の文字列をgrepで検索してパスを出力します</p>
+</div>
 
 
 
@@ -11,9 +13,11 @@
 
 
 
+<div class="wp-block-group">
 <ol class="wp-block-list">
 <li>git</li>
 </ol>
+</div>
 
 
 
@@ -21,6 +25,7 @@
 
 
 
+<div class="wp-block-group">
 <p>上記のコマンドをインストール済みの方は、以下のコマンドを実行してリポジトリからダウンロード後、ディレクトリを移動し、findコマンドを実行して検索文字列(hello)がファイル内に含まれるファイルのパスを出力してみてください</p>
 
 
@@ -29,6 +34,7 @@
 
 
 
+<div class="wp-block-group">
 <pre class="wp-block-own-copy-code-line-block wp-block-code has-24292-eff-color has-cyan-bluish-gray-background-color has-text-color has-background has-1-125-rem-font-size"><code>git clone https://github.com/trygfmi/find_getSearchedFilePath
 cd find_getSearchedFilePath
 find . -type f -exec grep -l hello {} +</code></pre>
@@ -41,6 +47,7 @@ find . -type f -exec grep -l hello {} +</code></pre>
 ./folder1/folder3/example5.txt
 ./example1.txt</code></pre>
 </details>
+</div>
 
 
 
@@ -48,6 +55,7 @@ find . -type f -exec grep -l hello {} +</code></pre>
 
 
 
+<div class="wp-block-group">
 <h4 class="wp-block-heading">MacPorts</h4>
 
 
@@ -65,6 +73,7 @@ find . -type f -exec grep -l hello {} +</code></pre>
 ./folder1/example3.txt
 ./folder1/folder3/example5.txt</code></pre>
 </details>
+</div>
 
 
 
@@ -72,10 +81,12 @@ find . -type f -exec grep -l hello {} +</code></pre>
 
 
 
+<div class="wp-block-group">
 <h4 class="wp-block-heading">WSL2</h4>
 
 
 
+<div class="wp-block-group">
 <pre class="wp-block-own-copy-code-line-block wp-block-code has-24292-eff-color has-cyan-bluish-gray-background-color has-text-color has-background has-1-125-rem-font-size"><code>git clone https://github.com/trygfmi/find_getSearchedFilePath
 cd find_getSearchedFilePath
 find . -type f -exec grep -l hello {} +</code></pre>
@@ -88,6 +99,7 @@ find . -type f -exec grep -l hello {} +</code></pre>
 ./folder1/example3.txt
 ./folder1/folder3/example5.txt</code></pre>
 </details>
+</div>
 
 
 
@@ -95,6 +107,7 @@ find . -type f -exec grep -l hello {} +</code></pre>
 
 
 
+<div class="wp-block-group">
 <pre class="wp-block-own-copy-code-line-block wp-block-code has-24292-eff-color has-cyan-bluish-gray-background-color has-text-color has-background has-1-125-rem-font-size"><code>git clone https://github.com/trygfmi/find_getSearchedFilePath
 cd find_getSearchedFilePath
 find . -type f -exec grep -l hello {} +</code></pre>
@@ -107,6 +120,9 @@ find . -type f -exec grep -l hello {} +</code></pre>
 ./folder1/folder3/example5.txt
 ./README.md</code></pre>
 </details>
+</div>
+</div>
+</div>
 
 
 
@@ -114,6 +130,7 @@ find . -type f -exec grep -l hello {} +</code></pre>
 
 
 
+<div class="wp-block-group">
 <h3 class="wp-block-heading">ubuntu</h3>
 
 
@@ -123,11 +140,13 @@ find . -type f -exec grep -l hello {} +</code></pre>
 
 
 
+<div class="wp-block-group">
 <p>以下のコマンドを端末に打ち込んでcommand not foundが出なければokです</p>
 
 
 
 <pre class="wp-block-own-copy-code-line-block wp-block-code has-24292-eff-color has-cyan-bluish-gray-background-color has-text-color has-background has-1-125-rem-font-size"><code>git --version</code></pre>
+</div>
 
 
 
@@ -135,11 +154,13 @@ find . -type f -exec grep -l hello {} +</code></pre>
 
 
 
+<div class="wp-block-group">
 <p>端末でcommand not foundが出たコマンドを以下のコマンドでインストールしてください</p>
 
 
 
 <pre class="wp-block-own-copy-code-line-block wp-block-code has-24292-eff-color has-cyan-bluish-gray-background-color has-text-color has-background has-1-125-rem-font-size"><code>sudo apt install git</code></pre>
+</div>
 
 
 
@@ -147,6 +168,7 @@ find . -type f -exec grep -l hello {} +</code></pre>
 
 
 
+<div class="wp-block-group">
 <p>以下のコマンドを実行することで詳細のようなファイル内に検索文字列(hello)が存在するファイルのパスが出力されるはずです</p>
 
 
@@ -158,8 +180,12 @@ find . -type f -exec grep -l hello {} +</code></pre>
 
 
 <details class="wp-block-details"><summary>詳細</summary>
-<p><pre class="wp-block-code has-24292-eff-color has-text-color has-background has-1-125-rem-font-size" style="background-color:#ffeeee"><code>./README.md<br>./folder1/example3.txt<br>./folder1/folder3/example5.txt<br>./example1.txt</code></pre></p>
+<pre class="wp-block-code has-background" style="background-color:#ffeeee"><code>./README.md
+./folder1/example3.txt
+./folder1/folder3/example5.txt
+./example1.txt</code></pre>
 </details>
+</div>
 </details>
 
 
@@ -173,6 +199,7 @@ find . -type f -exec grep -l hello {} +</code></pre>
 
 
 
+<div class="wp-block-group">
 <p>以下のコマンドをターミナルに打ち込んでcommand not foundが出なければokです</p>
 
 
@@ -199,6 +226,7 @@ git --version</code></pre>
 
 
 [![MacPortsでインストールしたコマンドのエイリアス設定](https://ss523971.stars.ne.jp/todo/wp-content/uploads/2025/10/thumbnail_macports2.png,)](https://ss523971.stars.ne.jp/todo/how-to-setup-macports-alias)
+</div>
 
 
 
@@ -206,12 +234,14 @@ git --version</code></pre>
 
 
 
+<div class="wp-block-group">
 <p>ターミナルでcommand not foundが出たコマンドを以下のコマンドでインストールしてエイリアスを設定してください</p>
 
 
 
 <pre class="wp-block-own-copy-code-line-block wp-block-code has-24292-eff-color has-cyan-bluish-gray-background-color has-text-color has-background has-1-125-rem-font-size"><code>sudo port install git
 echo 'alias git="/opt/local/bin/git"' >> ~/bashrc_folder/macports_alias</code></pre>
+</div>
 
 
 
@@ -219,6 +249,7 @@ echo 'alias git="/opt/local/bin/git"' >> ~/bashrc_folder/macports_alias</code></
 
 
 
+<div class="wp-block-group">
 <p>以下のコマンドを実行することで詳細のようなファイル内に検索文字列(hello)が存在するファイルのパスが出力されるはずです</p>
 
 
@@ -231,8 +262,12 @@ find . -type f -exec grep -l hello {} +</code></pre>
 
 
 <details class="wp-block-details"><summary>詳細</summary>
-<p><pre class="wp-block-code has-24292-eff-color has-text-color has-background has-1-125-rem-font-size" style="background-color:#ffeeee"><code>./example1.txt<br>./README.md<br>./folder1/example3.txt<br>./folder1/folder3/example5.txt</code></pre></p>
+<pre class="wp-block-code has-background" style="background-color:#ffeeee"><code>./example1.txt
+./README.md
+./folder1/example3.txt
+./folder1/folder3/example5.txt</code></pre>
 </details>
+</div>
 </details>
 
 
@@ -246,6 +281,7 @@ find . -type f -exec grep -l hello {} +</code></pre>
 
 
 
+<div class="wp-block-group">
 <p>以下のコマンドをプロンプトに打ち込んでcommand not foundが出なければokです</p>
 
 
@@ -275,6 +311,7 @@ find . -type f -exec grep -l hello {} +</code></pre>
 
 
 [![](https://ss523971.stars.ne.jp/todo/wp-content/uploads/2025/10/msys2_thumbnail_1920_1080.png)](https://ss523971.stars.ne.jp/todo/how-to-install-msys2)
+</div>
 
 
 
@@ -282,6 +319,7 @@ find . -type f -exec grep -l hello {} +</code></pre>
 
 
 
+<div class="wp-block-group">
 <p>プロンプトでcommand not foundが出たコマンドを以下のコマンドでインストールしてください</p>
 
 
@@ -299,6 +337,7 @@ find . -type f -exec grep -l hello {} +</code></pre>
 
 
 <pre class="wp-block-own-copy-code-line-block wp-block-code has-24292-eff-color has-cyan-bluish-gray-background-color has-text-color has-background has-1-125-rem-font-size"><code>pacman --sync git</code></pre>
+</div>
 
 
 
@@ -306,6 +345,7 @@ find . -type f -exec grep -l hello {} +</code></pre>
 
 
 
+<div class="wp-block-group">
 <p>以下のコマンドを実行することで詳細のようなファイル内に検索文字列(hello)が存在するファイルのパスが出力されるはずです</p>
 
 
@@ -314,6 +354,7 @@ find . -type f -exec grep -l hello {} +</code></pre>
 
 
 
+<div class="wp-block-group">
 <pre class="wp-block-own-copy-code-line-block wp-block-code has-24292-eff-color has-cyan-bluish-gray-background-color has-text-color has-background has-1-125-rem-font-size"><code>git clone https://github.com/trygfmi/find_getSearchedFilePath
 cd find_getSearchedFilePath
 find . -type f -exec grep -l hello {} +</code></pre>
@@ -321,8 +362,12 @@ find . -type f -exec grep -l hello {} +</code></pre>
 
 
 <details class="wp-block-details"><summary>詳細</summary>
-<p><pre class="wp-block-code has-24292-eff-color has-text-color has-background has-1-125-rem-font-size" style="background-color:#ffeeee"><code>./example1.txt<br>./README.md<br>./folder1/example3.txt<br>./folder1/folder3/example5.txt</code></pre></p>
+<pre class="wp-block-code has-background" style="background-color:#ffeeee"><code>./example1.txt
+./README.md
+./folder1/example3.txt
+./folder1/folder3/example5.txt</code></pre>
 </details>
+</div>
 
 
 
@@ -330,6 +375,7 @@ find . -type f -exec grep -l hello {} +</code></pre>
 
 
 
+<div class="wp-block-group">
 <pre class="wp-block-own-copy-code-line-block wp-block-code has-24292-eff-color has-cyan-bluish-gray-background-color has-text-color has-background has-1-125-rem-font-size"><code>git clone https://github.com/trygfmi/find_getSearchedFilePath
 cd find_getSearchedFilePath
 find . -type f -exec grep -l hello {} +</code></pre>
@@ -337,9 +383,15 @@ find . -type f -exec grep -l hello {} +</code></pre>
 
 
 <details class="wp-block-details"><summary>詳細</summary>
-<p><pre class="wp-block-code has-24292-eff-color has-text-color has-background has-1-125-rem-font-size" style="background-color:#ffeeee"><code>./example1.txt<br>./folder1/example3.txt<br>./folder1/folder3/example5.txt<br>./README.md</code></pre></p>
+<pre class="wp-block-code has-background" style="background-color:#ffeeee"><code>./example1.txt
+./folder1/example3.txt
+./folder1/folder3/example5.txt
+./README.md</code></pre>
 </details>
+</div>
+</div>
 </details>
+</div>
 
 
 
@@ -348,11 +400,3 @@ find . -type f -exec grep -l hello {} +</code></pre>
 
 
 <p>.はカレントディレクトリ、fはファイル、-execはfindのオプションで次の引数のコマンドを実行する、-lはファイルパスのみ表示、{}はfind . -type fした結果を格納した文字列、+は1つのプロセスで実行する指示子です</p>
-
-
-
-<p></p>
-
-
-
-<p></p>
